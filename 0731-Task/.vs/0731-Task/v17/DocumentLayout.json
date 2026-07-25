@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{988B38B7-5642-415C-93E4-4470B465E84D}|0731-Task\\0731-Task.vcxproj|C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{988B38B7-5642-415C-93E4-4470B465E84D}|0731-Task\\0731-Task.vcxproj|solutionrelative:0731-Task\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{988B38B7-5642-415C-93E4-4470B465E84D}|0731-Task\\0731-Task.vcxproj|C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{988B38B7-5642-415C-93E4-4470B465E84D}|0731-Task\\0731-Task.vcxproj|solutionrelative:0731-Task\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{988B38B7-5642-415C-93E4-4470B465E84D}|0731-Task\\0731-Task.vcxproj|C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\BattleManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{988B38B7-5642-415C-93E4-4470B465E84D}|0731-Task\\0731-Task.vcxproj|solutionrelative:0731-Task\\BattleManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{988B38B7-5642-415C-93E4-4470B465E84D}|0731-Task\\0731-Task.vcxproj|C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\BattleManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{988B38B7-5642-415C-93E4-4470B465E84D}|0731-Task\\0731-Task.vcxproj|solutionrelative:0731-Task\\BattleManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{988B38B7-5642-415C-93E4-4470B465E84D}|0731-Task\\0731-Task.vcxproj|C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\Mage.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -25,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{988B38B7-5642-415C-93E4-4470B465E84D}|0731-Task\\0731-Task.vcxproj|C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\Summoner.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{988B38B7-5642-415C-93E4-4470B465E84D}|0731-Task\\0731-Task.vcxproj|solutionrelative:0731-Task\\Summoner.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{988B38B7-5642-415C-93E4-4470B465E84D}|0731-Task\\0731-Task.vcxproj|C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{988B38B7-5642-415C-93E4-4470B465E84D}|0731-Task\\0731-Task.vcxproj|solutionrelative:0731-Task\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{988B38B7-5642-415C-93E4-4470B465E84D}|0731-Task\\0731-Task.vcxproj|C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\Character.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -62,11 +70,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "0731-Task.cpp",
               "DocumentMoniker": "C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\0731-Task.cpp",
               "RelativeDocumentMoniker": "0731-Task\\0731-Task.cpp",
@@ -75,25 +83,37 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-07-04T05:08:43.582Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Summoner.h",
-              "DocumentMoniker": "C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\Summoner.h",
-              "RelativeDocumentMoniker": "0731-Task\\Summoner.h",
-              "ToolTip": "C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\Summoner.h",
-              "RelativeToolTip": "0731-Task\\Summoner.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "BattleManager.h",
+              "DocumentMoniker": "C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\BattleManager.h",
+              "RelativeDocumentMoniker": "0731-Task\\BattleManager.h",
+              "ToolTip": "C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\BattleManager.h",
+              "RelativeToolTip": "0731-Task\\BattleManager.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-07-25T04:08:23.944Z",
+              "WhenOpened": "2026-07-25T06:34:25.067Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "BattleManager.cpp",
+              "DocumentMoniker": "C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\BattleManager.cpp",
+              "RelativeDocumentMoniker": "0731-Task\\BattleManager.cpp",
+              "ToolTip": "C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\BattleManager.cpp",
+              "RelativeToolTip": "0731-Task\\BattleManager.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-07-25T06:34:16.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Summoner.cpp",
               "DocumentMoniker": "C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\Summoner.cpp",
               "RelativeDocumentMoniker": "0731-Task\\Summoner.cpp",
@@ -101,12 +121,11 @@
               "RelativeToolTip": "0731-Task\\Summoner.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-07-25T04:08:15.213Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-25T04:08:15.213Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Mage.cpp",
               "DocumentMoniker": "C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\Mage.cpp",
               "RelativeDocumentMoniker": "0731-Task\\Mage.cpp",
@@ -119,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Character.cpp",
               "DocumentMoniker": "C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\Character.cpp",
               "RelativeDocumentMoniker": "0731-Task\\Character.cpp",
@@ -127,25 +146,24 @@
               "RelativeToolTip": "0731-Task\\Character.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-07-25T04:06:50.657Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-25T04:06:50.657Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "Game.h",
               "DocumentMoniker": "C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\Game.h",
               "RelativeDocumentMoniker": "0731-Task\\Game.h",
               "ToolTip": "C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\Game.h",
               "RelativeToolTip": "0731-Task\\Game.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-07-25T04:07:21.13Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Warrior.cpp",
               "DocumentMoniker": "C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\Warrior.cpp",
               "RelativeDocumentMoniker": "0731-Task\\Warrior.cpp",
@@ -153,12 +171,11 @@
               "RelativeToolTip": "0731-Task\\Warrior.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-07-25T04:08:49.102Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-25T04:08:49.102Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Character.h",
               "DocumentMoniker": "C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\Character.h",
               "RelativeDocumentMoniker": "0731-Task\\Character.h",
@@ -166,12 +183,36 @@
               "RelativeToolTip": "0731-Task\\Character.h",
               "ViewState": "AgIAAAcAAAAAAAAAAAAkwC8AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-07-25T04:07:01.176Z",
+              "WhenOpened": "2026-07-25T04:07:01.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Game.cpp",
+              "DocumentMoniker": "C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\Game.cpp",
+              "RelativeDocumentMoniker": "0731-Task\\Game.cpp",
+              "ToolTip": "C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\Game.cpp",
+              "RelativeToolTip": "0731-Task\\Game.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-07-25T04:07:14.322Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
+              "Title": "Summoner.h",
+              "DocumentMoniker": "C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\Summoner.h",
+              "RelativeDocumentMoniker": "0731-Task\\Summoner.h",
+              "ToolTip": "C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\Summoner.h",
+              "RelativeToolTip": "0731-Task\\Summoner.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-07-25T04:08:23.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Team.h",
               "DocumentMoniker": "C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\Team.h",
               "RelativeDocumentMoniker": "0731-Task\\Team.h",
@@ -179,12 +220,11 @@
               "RelativeToolTip": "0731-Task\\Team.h",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-07-25T04:08:40.378Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-25T04:08:40.378Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Warrior.h",
               "DocumentMoniker": "C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\Warrior.h",
               "RelativeDocumentMoniker": "0731-Task\\Warrior.h",
@@ -192,25 +232,11 @@
               "RelativeToolTip": "0731-Task\\Warrior.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-07-25T04:08:58.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-25T04:08:58.564Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Game.cpp",
-              "DocumentMoniker": "C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\Game.cpp",
-              "RelativeDocumentMoniker": "0731-Task\\Game.cpp",
-              "ToolTip": "C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\Game.cpp",
-              "RelativeToolTip": "0731-Task\\Game.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAALYBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-07-25T04:07:14.322Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Team.cpp",
               "DocumentMoniker": "C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\Team.cpp",
               "RelativeDocumentMoniker": "0731-Task\\Team.cpp",
@@ -218,12 +244,11 @@
               "RelativeToolTip": "0731-Task\\Team.cpp",
               "ViewState": "AgIAACEAAAAAAAAAAAAkwEkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-07-25T04:28:35.712Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-25T04:28:35.712Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Mage.h",
               "DocumentMoniker": "C:\\Users\\ktc\\Documents\\Github\\ktc25a31a0034\\0731-task\\0731-Task\\0731-Task\\Mage.h",
               "RelativeDocumentMoniker": "0731-Task\\Mage.h",
@@ -231,8 +256,7 @@
               "RelativeToolTip": "0731-Task\\Mage.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-07-25T04:07:30.047Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-25T04:07:30.047Z"
             }
           ]
         }

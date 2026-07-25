@@ -1,458 +1,97 @@
 #include "Game.h"
-
+#include "BattleManager.h"
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
 
-
 Game::Game()
 {
-    srand((unsigned int)time(nullptr));
+    // 乱数の初期化
+    srand(static_cast<unsigned int>(time(nullptr)));
 }
-
-
 
 void Game::Start()
 {
-
     int turn = 1;
 
-
-    while (playerTeam.GetPower() > 0 &&
-        enemyTeam.GetPower() > 0)
+    // どちらかの戦力が0になるまでループ
+    while (playerTeam.GetPower() > 0 && enemyTeam.GetPower() > 0)
     {
-
         std::cout << "\n====================\n";
         std::cout << turn << "ターン目\n";
         std::cout << "====================\n";
 
-
         Turn();
 
-
         turn++;
-
     }
 
-
     ShowResult();
-
 }
-
-
 
 void Game::Turn()
 {
-
+    // 1. 各チームのステータス表示
+    std::cout << "\n味方の状態\n";
     playerTeam.ShowStatus();
 
-
     std::cout << "\n敵の状態\n";
-
     enemyTeam.ShowStatus();
 
-
-
+    // 2. プレイヤーのキャラクター選択
     int select;
-
-
     std::cout << "\n使用するキャラクター\n";
-    std::cout << "1.剣士\n";
-    std::cout << "2.魔法使い\n";
-    std::cout << "3.召喚士\n";
-
-
+    std::cout << "1. 剣士\n";
+    std::cout << "2. 魔法使い\n";
+    std::cout << "3. 召喚士\n";
     std::cin >> select;
-
-
 
     while (select < 1 || select > 3)
     {
-        std::cout << "入力し直してください\n";
+        std::cout << "入力し直してください：";
         std::cin >> select;
     }
+    Character* playerChar = playerTeam.GetCharacter(select - 1);
 
-
-
-    Character* player =
-        playerTeam.GetCharacter(select - 1);
-
-
-
-
-    int action;
-
-
+    // 3. プレイヤーの行動選択
+    int actionSelect;
     std::cout << "\n行動選択\n";
-    std::cout << "1.攻撃\n";
-    std::cout << "2.防御\n";
+    std::cout << "1. 攻撃\n";
+    std::cout << "2. 防御\n";
+    std::cin >> actionSelect;
 
-
-    std::cin >> action;
-
-
-
-    Action playerAction;
-
-
-    if (action == 1)
+    while (actionSelect != 1 && actionSelect != 2)
     {
-        playerAction = Action::Attack;
+        std::cout << "入力し直してください：";
+        std::cin >> actionSelect;
     }
-    else
-    {
-        playerAction = Action::Defense;
-    }
+    Action playerAction = (actionSelect == 1) ? Action::Attack : Action::Defense;
 
+    // 4. 敵のキャラクターと行動を選択（ランダム）
+    int enemyIndex = rand() % enemyTeam.GetMemberCount();
+    Character* enemyChar = enemyTeam.GetCharacter(enemyIndex);
+    Action enemyAction = (rand() % 2 == 0) ? Action::Attack : Action::Defense;
 
-
-
-    // 敵選択
-
-    int enemyNumber =
-        rand() % 3;
-
-
-    Character* enemy =
-        enemyTeam.GetCharacter(enemyNumber);
-
-
-
-    Action enemyAction;
-
-
-    if (rand() % 2 == 0)
-    {
-        enemyAction = Action::Attack;
-
-        std::cout
-            << "敵の"
-            << enemy->GetName()
-            << "は攻撃を選択\n";
-    }
-    else
-    {
-        enemyAction = Action::Defense;
-
-        std::cout
-            << "敵の"
-            << enemy->GetName()
-            << "は防御を選択\n";
-    }
-
-
-
-    Battle
-    (
-        player,
-        enemy,
-        playerAction,
-        enemyAction
-    );
-
+    // 5. バトルの実行（★詳細な判定やダメージ計算は BattleManager に一任！）
+    BattleManager::Resolve(playerTeam, enemyTeam, playerChar, playerAction, enemyChar, enemyAction);
 }
-
-
-
-
-
-
-void Game::Battle
-(
-    Character* player,
-    Character* enemy,
-    Action playerAction,
-    Action enemyAction
-)
-{
-
-
-    std::cout << "\n";
-    std::cout
-        << player->GetName()
-        << " VS "
-        << enemy->GetName()
-        << "\n";
-
-
-
-    // 両方攻撃
-
-    if (playerAction == Action::Attack &&
-        enemyAction == Action::Attack)
-    {
-
-        AttackVsAttack(player, enemy);
-
-    }
-
-
-
-    // 味方攻撃 敵防御
-
-    else if (playerAction == Action::Attack &&
-        enemyAction == Action::Defense)
-    {
-
-        AttackVsDefense(player, enemy);
-
-    }
-
-
-
-    // 味方防御 敵攻撃
-
-    else if (playerAction == Action::Defense &&
-        enemyAction == Action::Attack)
-    {
-
-        AttackVsDefense(enemy, player);
-
-    }
-
-
-
-    else
-    {
-
-        std::cout
-            << "お互い防御した\n";
-
-        std::cout
-            << "何も起こらなかった\n";
-
-    }
-
-}
-
-
-
-
-
-
-
-// 攻撃 VS 攻撃
-
-void Game::AttackVsAttack
-(
-    Character* player,
-    Character* enemy
-)
-{
-
-
-    int playerPower =
-        player->GetAttack();
-
-
-    int enemyPower =
-        enemy->GetAttack();
-
-
-
-
-    if (playerPower > enemyPower)
-    {
-
-        std::cout
-            << "味方の攻撃成功\n";
-
-
-        enemyTeam.Damage(playerPower);
-
-
-    }
-
-
-    else if (enemyPower > playerPower)
-    {
-
-        std::cout
-            << "敵の攻撃成功\n";
-
-
-        playerTeam.Damage(enemyPower);
-
-    }
-
-
-    else
-    {
-
-        std::cout
-            << "攻撃力が同じ！ドロー\n";
-
-    }
-
-
-}
-
-
-
-
-
-
-
-
-// 攻撃 VS 防御
-
-void Game::AttackVsDefense
-(
-    Character* attacker,
-    Character* defender
-)
-{
-
-    CharacterType attackType =
-        attacker->GetType();
-
-
-    CharacterType defenseType =
-        defender->GetType();
-
-
-
-
-    // 同じキャラ
-
-    if (attackType == defenseType)
-    {
-
-        std::cout
-            << "防御成功\n";
-
-        return;
-
-    }
-
-
-
-
-
-    // クリティカル判定
-
-    bool critical = false;
-
-
-
-    if (
-        (attackType == CharacterType::Warrior &&
-            defenseType == CharacterType::Summoner)
-
-        ||
-
-        (attackType == CharacterType::Mage &&
-            defenseType == CharacterType::Warrior)
-
-        ||
-
-        (attackType == CharacterType::Summoner &&
-            defenseType == CharacterType::Mage)
-        )
-    {
-
-        critical = true;
-
-    }
-
-
-
-
-
-    if (critical)
-    {
-
-        std::cout
-            << "クリティカル攻撃発生!\n";
-
-        std::cout
-            << defender->GetName()
-            << "側の戦力が"
-            << attacker->GetAttack() * 2
-            << "減少\n";
-
-
-        if (defender == enemyTeam.GetCharacter(0) ||
-            defender == enemyTeam.GetCharacter(1) ||
-            defender == enemyTeam.GetCharacter(2))
-        {
-
-            enemyTeam.Damage(
-                attacker->GetAttack() * 2);
-
-        }
-        else
-        {
-
-            playerTeam.Damage(
-                attacker->GetAttack() * 2);
-
-        }
-
-
-    }
-
-
-    else
-    {
-
-        std::cout
-            << "カウンター発生!\n";
-
-
-        std::cout
-            << "攻撃側の戦力が"
-            << attacker->GetAttack() * 2
-            << "減少\n";
-
-
-
-        if (attacker == enemyTeam.GetCharacter(0) ||
-            attacker == enemyTeam.GetCharacter(1) ||
-            attacker == enemyTeam.GetCharacter(2))
-        {
-
-            enemyTeam.Damage(
-                attacker->GetAttack() * 2);
-
-        }
-        else
-        {
-
-            playerTeam.Damage(
-                attacker->GetAttack() * 2);
-
-        }
-
-    }
-
-}
-
-
-
-
-
 
 void Game::ShowResult()
 {
+    std::cout << "\n====================\n";
 
-
-
-    if (playerTeam.GetPower() <= 0)
+    if (playerTeam.GetPower() <= 0 && enemyTeam.GetPower() <= 0)
     {
-
-        std::cout
-            << "敵陣営の勝利\n";
-
+        std::cout << "引き分けです！\n";
+    }
+    else if (playerTeam.GetPower() <= 0)
+    {
+        std::cout << "敗北しました...\n";
     }
     else
     {
-
-        std::cout
-            << "味方陣営の勝利\n";
-
+        std::cout << "勝利しました！\n";
     }
 
-
-
+    std::cout << "====================\n";
 }

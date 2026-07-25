@@ -124,6 +124,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="0731-Task.cpp" />
+    <ClCompile Include="BattleManager.cpp" />
     <ClCompile Include="Character.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Mage.cpp" />
@@ -132,6 +133,7 @@
     <ClCompile Include="Warrior.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BattleManager.h" />
     <ClInclude Include="Character.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Mage.h" />

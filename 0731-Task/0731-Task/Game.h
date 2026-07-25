@@ -2,13 +2,6 @@
 
 #include "Team.h"
 
-// 行動の列挙型（1. 攻撃, 2. 防御）
-enum class Action
-{
-    Attack,
-    Defense
-};
-
 class Game
 {
 private:
@@ -21,10 +14,5 @@ public:
 
 private:
     void Turn();
-
-    // Game.cpp の内容と完全に合わせた関数の宣言
-    void Battle(Character* player, Character* enemy, Action playerAction, Action enemyAction);
-    void AttackVsAttack(Character* player, Character* enemy);
-    void AttackVsDefense(Character* attacker, Character* defender);
     void ShowResult();
 };
